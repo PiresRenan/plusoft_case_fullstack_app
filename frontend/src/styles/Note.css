@@ -1,0 +1,103 @@
+.note-container {
+  align-items: center;
+  display: flex;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .note-title {
+    color: #fff;
+  }
+  
+  .note-content {
+    color: #F0FFFF;
+  }
+  
+  .note-date {
+    color: #999;
+    font-size: 0.8rem;
+  }
+  
+  .delete-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .delete-button:hover {
+    background-color: #d32f2f;
+  }
+
+  .edit-button {
+    background-color: #48D1CC;
+    color: #708090;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .edit-button:hover {
+    background-color: #2E8B57;
+    color: white;
+  }
+
+  .editing-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #fff;
+  }
+
+  .title-editing{
+    color: #fff;
+    display: flex;
+    font-size: 15px;
+  }
+
+  .note-editing-title {
+    background-color: transparent;
+    border: none;
+    border-bottom: #48D1CC 1px solid;
+    margin-bottom: 10px;
+    color: #fff;
+    padding: 5px 10px;
+  }
+
+  .note-editing-title:focus {
+    outline: none;
+    border-color: #48D1CC;
+  }
+
+  .content-editing {
+    margin-bottom: 5px;
+  }
+
+  .note-editing-content {
+    background-color: transparent;
+    margin-bottom: 10px;
+    color: #fff;
+    padding: 5px 10px;
+  }
+
+  .editing-save-btn{
+    background-color: #808080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }

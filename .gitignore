@@ -1,0 +1,6 @@
+venv/
+
+backend/data/
+backend/.idea
+
+frontend/node_modules

@@ -1,0 +1,29 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - 80:80
+    volumes:
+      - ./frontend:/frontend
+    depends_on:
+      - backend
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - 8000:8000
+    volumes:
+      - ./backend:/backend
+      - ./backend/data/web/static:/data/web/static
+      - ./backend/data/web/media:/data/web/media
+    env_file:
+      - ./backend/dotenv_files/.env
+    depends_on:
+      - psql
+  psql:
+    image: postgres:13-alpine
+    volumes:
+      - ./backend/data/postgres/data:/var/lib/postgresql/data/
+    env_file:
+      - ./backend/dotenv_files/.env
