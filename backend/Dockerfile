@@ -6,7 +6,8 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
 COPY ./ /backend
-COPY scripts /scripts
+
+COPY ./scripts /scripts
 
 WORKDIR /backend
 
@@ -29,4 +30,4 @@ ENV PATH="/scripts:/venv/bin:$PATH"
 
 USER duser
 
-CMD ["commands.sh"]
+CMD ["comando.sh"]

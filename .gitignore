@@ -7,5 +7,6 @@ backend/.idea
 backend/api/__pycache__
 backend/api/migrations
 backend/backend/__pycache__
+backend/dotenv_files/.env
 
 frontend/node_modules
