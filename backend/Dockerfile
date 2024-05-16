@@ -30,4 +30,4 @@ ENV PATH="/scripts:/venv/bin:$PATH"
 
 USER duser
 
-CMD ["comando.sh"]
+CMD ["commands.sh"]
